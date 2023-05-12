@@ -1,1 +1,0 @@
-# minga_green_frontend
