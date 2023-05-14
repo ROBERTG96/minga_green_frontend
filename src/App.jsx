@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className='w-screen h-screen bg-[#EBEBEB] container mx-auto px-4'>
+      <div className='w-screen h-screen bg-[#EBEBEB]'>
         <NavBar></NavBar>
         <Main></Main>
         <Footer></Footer>
