@@ -5,10 +5,13 @@ module.exports = {
       './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-      fontFamily:{
-        'sans': ['"Bungee"']
-      },
-      extend: {}
+      extend: {
+        backgroundImage: (theme) => ({
+          mobile: "url('/src/assets/img/NavBar/HomeMobile.png')",
+          desktop: "url('/src/assets/img/NavBar/naruto.png')",
+          home1: "url('/src/assets/img/NavBar/backgroundHome1.png')"
+        }),
+      }
   },
   variants: {},
   plugins: []
