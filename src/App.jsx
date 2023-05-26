@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#EBEBEB] h-full w-full">
+      <div className=" h-full w-full">
         <Main></Main>
       </div>
     </>

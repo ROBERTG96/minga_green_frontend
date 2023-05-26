@@ -3,15 +3,15 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 const Main = () => {
   return (
-    <div>
+    <div  >
       <div
         id="default-carousel"
         className="w-full hidden md:block mb-20"
         data-carousel="slide"
       >
-        <div className="h-56 rounded-lg md:h-96 ">
+        <div className="rounded-lg md:h-96 ">
           <div className="duration-700 ease-in-out" data-carousel-item>
-            <div className="hidden md:block p-14 -mt-12">
+            <div className="hidden bg-[#EBEBEB] md:block p-14 -mt-12">
               <NavBar></NavBar>
               <div className="flex justify-between h-64 bg-home1 rounded bg-cover w-full">
                 <button
@@ -108,7 +108,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="flex md:hidden justify-between overflow-hidden bg-[#EBEBEB]">
+      <div className="flex md:hidden justify-between overflow-hidden ">
         <div className="md:w-[400px] md:hidden bg-mobile mx-auto w-full h-screen bg-center bg-cover">
           <NavBar></NavBar>
           <div className="flex flex-col justify-center my-48 items-center">

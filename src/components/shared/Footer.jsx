@@ -11,10 +11,10 @@ const Footer = () => {
         <nav className='container mx-auto font-poppins sm:mt-5 md:my-0 lg:mt-20 xl:mt-10 2xl:mt-36'>
           <ul>
             <div className='flex items-center justify-center mx-auto'>
-              <li className='mx-10 text-white md:mx-20'>
+              <li className='mx-10 text-white md:text-black md:mx-20'>
                 <a href="">Home</a>
               </li>
-              <li className='text-white mx-auto'>
+              <li className='text-white  mx-auto'>
                 <a href="">Mangas</a>
               </li>
               <div className='mx-auto'></div>
