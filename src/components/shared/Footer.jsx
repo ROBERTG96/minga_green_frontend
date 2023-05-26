@@ -8,18 +8,18 @@ const Footer = () => {
       >
       </div>
       <div className=''>
-        <nav className='container mx-auto font-poppins sm:mt-5 md:my-0 lg:mt-20 xl:mt-10 2xl:mt-36'>
+        <nav className='container mx-auto font-poppins sm:mt-5 md:my-0 lg:mt-20 xl:mt-10 2xl:mt-36 '>
           <ul>
             <div className='flex items-center justify-center mx-auto'>
-              <li className='mx-10 text-white md:text-black md:mx-20'>
-                <a href="">Home</a>
+              <li className='mx-10 text-white hidden md:block md:text-black md:mx-20'>
+                <a href="#">Home</a>
               </li>
-              <li className='text-white  mx-auto'>
-                <a href="">Mangas</a>
+              <li className='text-white hidden md:block md:text-black mx-auto'>
+                <a href="#">Mangas</a>
               </li>
-              <div className='mx-auto'></div>
-              <li className='mx-auto'>
-                <a href="">
+              <div className='hidden md:mx-auto md:block  '></div>
+              <li className='hidden md:mx-auto md:block '>
+                <a href="#" className='hidden md:block '>
                   <img
                     src="/src/assets/img/NavBar/logo.svg"
                     className=""
@@ -27,26 +27,26 @@ const Footer = () => {
                   />
                 </a>
               </li>
-              <div className='mx-auto'></div>
+              <div className='mx-auto hidden md:block'></div>
 
-              <div className='flex mx-auto'>
+              <div className='flex mx-auto justify-between '>
 
                 <li className='pr-8'>
-                  <a href=""><RiFacebookBoxFill className='text-white md:text-black text-3xl'></RiFacebookBoxFill></a>
+                  <a href="https://es-la.facebook.com/" target='_blank'><RiFacebookBoxFill className='text-white md:text-black text-3xl'></RiFacebookBoxFill></a>
                   <div className=''>
-                    <button className='bg-[#F9A8D4] mt-5 p-2 w-52 hidden md:block absolute text-white text-xl'>
+                    <button className='bg-[#F9A8D4] mt-5 p-2 w-52 rounded-full mb-4 md:block absolute text-white text-xl'>
                       Donate ♡
                     </button>
                   </div>
                 </li>
                 <li className='pr-8'>
-                  <a href=""><RiTwitterFill className='text-white md:text-black text-3xl'></RiTwitterFill></a>
+                  <a href="https://twitter.com/" target='_blank'><RiTwitterFill className='text-white md:text-black text-3xl'></RiTwitterFill></a>
                 </li>
                 <li className='pr-7'>
-                  <a href=""><RiVimeoFill className='text-white md:text-black text-3xl'></RiVimeoFill></a>
+                  <a href="https://vimeo.com/?utm_medium=cpc&utm_source=google&utm_campaign=Core_Search_INTL_ES_Google_Brand&utm_term=vimeo&utm_adgroup=Vimeo+-+Exact&campaignid=19614554638&adgroupid=149233244567&device=c&gclid=EAIaIQobChMIt5_e_KaS_wIVVkFIAB0S0AFsEAAYASAAEgJbA_D_BwE&gclsrc=aw.ds" target='_blank'><RiVimeoFill className='text-white md:text-black text-3xl'></RiVimeoFill></a>
                 </li>
                 <li >
-                  <a href=""><RiYoutubeFill className='text-white md:text-black text-3xl'></RiYoutubeFill></a>
+                  <a href="https://www.youtube.com/" target='_blank'><RiYoutubeFill className='text-white md:text-black text-3xl'></RiYoutubeFill></a>
                 </li>
               </div>
             </div>

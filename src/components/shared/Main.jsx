@@ -109,7 +109,7 @@ const Main = () => {
       </div>
 
       <div className="flex md:hidden justify-between overflow-hidden ">
-        <div className="md:w-[400px] md:hidden bg-mobile mx-auto w-full h-screen bg-center bg-cover">
+        <div className="md:w-[400px] bg-mobile mx-auto w-full h-screen bg-cover bg-center sm:bg-cover sm:bg-no-repeat md:bg-cover md:bg-center">
           <NavBar></NavBar>
           <div className="flex flex-col justify-center my-48 items-center">
             <h1 className="text-white pl-9 font-poppins pr-6 text-center text-3xl sm:text-4xl font-bold">
