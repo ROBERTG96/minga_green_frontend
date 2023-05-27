@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className="flex justify-between items-center">
     <button className="mx-5 mb-4">
-      <RxHamburgerMenu className="h-10 w-10 bg-gradient-to-tr text-[#F472B6]"></RxHamburgerMenu>
+      <RxHamburgerMenu className="h-10 w-8 bg-gradient-to-tr text-[#F472B6]"></RxHamburgerMenu>
     </button>
     <div className="my-5">
       <img
