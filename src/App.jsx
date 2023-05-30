@@ -1,18 +1,18 @@
-import { useState } from "react";
-import NavBar from "./components/shared/NavBar";
-import Main from "./components/shared/Main";
-import Footer from "./components/shared/Footer";
+import Main from "./components/layouts/Main";
+import Index from "./pages/Index";
 
-function App() {
-  const [count, setCount] = useState(0);
+export default function App() {
+  let data = [{
+    character_photo: 'prueba1',
+    cover_photo: 'prueba1',
+    title: 'prueba1',
+    description: 'prueba1'
+  }]
 
   return (
-    <>
-      <div className=" h-full w-full">
-        <Main></Main>
-      </div>
-    </>
-  );
+    <Main className="h-full w-full">
+      <Index data={data}></Index>
+    </Main>
+  )
 }
 
-export default App;
