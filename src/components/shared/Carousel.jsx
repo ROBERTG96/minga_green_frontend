@@ -1,6 +1,21 @@
-import { RxHamburgerMenu } from "react-icons/rx";
+import ArrowLeft from "./ArrowLeft";
+import ArrowRight from "./ArrowRight";
 
-export default function Carousel({ character_photo, cover_photo, title, description }) {
+import Mobile from "./Mobile"
+
+export default function Carouselx({ character_photo, cover_photo, title, description }) {
+
+    let counter = 0;
+    const next = () => {
+        counter++;
+        console.log(counter);
+    }
+
+    const prev = () => {
+        counter--;
+        console.log(counter);
+    }
+
     return (
         <>
             <div id="default-carousel" className="w-full hidden md:block mb-20" data-carousel="slide">
@@ -8,39 +23,7 @@ export default function Carousel({ character_photo, cover_photo, title, descript
                     <div className="duration-700 ease-in-out" data-carousel-item>
                         <div className="hidden bg-[#EBEBEB] md:block pb-2 px-14 -mt-12">
                             <div className="flex justify-between h-64 bg-home1 rounded bg-cover w-full">
-                                <button
-                                    type="button"
-                                    className="md:hidden lg:block xl:p-10 top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                                    data-carousel-prev
-                                >
-                                    <span className="">
-                                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_bd_12938_998)">
-                                                <rect width="26.5" height="26.5" rx="13.25" transform="matrix(-1 0 0 1 30.5 3)" fill="url(#paint0_linear_12938_998)" fill-opacity="0.5" shape-rendering="crispEdges" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.25 16.25C22.25 16.0015 22.0465 15.8 21.7955 15.8L13.8019 15.8L17.1169 12.5182C17.2944 12.3425 17.2944 12.0575 17.1169 11.8818C16.9394 11.7061 16.6516 11.7061 16.474 11.8818L12.3831 15.9318C12.2056 16.1075 12.2056 16.3925 12.3831 16.5682L16.474 20.6182C16.6516 20.7939 16.9394 20.7939 17.1169 20.6182C17.2944 20.4425 17.2944 20.1575 17.1169 19.9818L13.8019 16.7L21.7955 16.7C22.0465 16.7 22.25 16.4985 22.25 16.25Z" fill="#333333" />
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_bd_12938_998" x="-28" y="-29" width="90.5" height="90.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="16" />
-                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_12938_998" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                    <feOffset dy="1" />
-                                                    <feGaussianBlur stdDeviation="2" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
-                                                    <feBlend mode="normal" in2="effect1_backgroundBlur_12938_998" result="effect2_dropShadow_12938_998" />
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_12938_998" result="shape" />
-                                                </filter>
-                                                <linearGradient id="paint0_linear_12938_998" x1="-2" y1="18.5" x2="67.5" y2="47.5" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="white" />
-                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                        <span className="sr-only">Previous</span>
-                                    </span>
-                                </button>
+                                <ArrowLeft onClick={prev} />
                                 <div className="flex">
                                     <img
                                         src="/src/assets/img/NavBar/personaje1.png"
@@ -60,40 +43,8 @@ export default function Carousel({ character_photo, cover_photo, title, descript
                                         </h1>
                                     </div>
                                 </div>
-                                <button
-                                    type="button"
-                                    className="md:hidden lg:block xl:p-10 top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                                    data-carousel-prev
-                                >
-                                    <span className="">
-                                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_bd_12928_9)">
-                                                <rect x="4" y="3" width="26.5" height="26.5" rx="13.25" fill="url(#paint0_linear_12928_9)" fill-opacity="0.5" shape-rendering="crispEdges" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.25 16.25C12.25 16.0015 12.4535 15.8 12.7045 15.8L20.6981 15.8L17.3831 12.5182C17.2056 12.3425 17.2056 12.0575 17.3831 11.8818C17.5606 11.7061 17.8484 11.7061 18.026 11.8818L22.1169 15.9318C22.2944 16.1075 22.2944 16.3925 22.1169 16.5682L18.026 20.6182C17.8484 20.7939 17.5606 20.7939 17.3831 20.6182C17.2056 20.4425 17.2056 20.1575 17.3831 19.9818L20.6981 16.7L12.7045 16.7C12.4535 16.7 12.25 16.4985 12.25 16.25Z" fill="#333333" />
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_bd_12928_9" x="-28" y="-29" width="90.5" height="90.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="16" />
-                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_12928_9" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                    <feOffset dy="1" />
-                                                    <feGaussianBlur stdDeviation="2" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
-                                                    <feBlend mode="normal" in2="effect1_backgroundBlur_12928_9" result="effect2_dropShadow_12928_9" />
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_12928_9" result="shape" />
-                                                </filter>
-                                                <linearGradient id="paint0_linear_12928_9" x1="2" y1="21.5" x2="71.5" y2="50.5" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="white" />
-                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
+                                <ArrowRight onClick={next} />
 
-                                        <span className="sr-only">Previous</span>
-                                    </span>
-                                </button>
                             </div>
 
                             <div className="hidden md:block mt-12">
@@ -118,33 +69,7 @@ export default function Carousel({ character_photo, cover_photo, title, descript
                     </div>
                 </div>
             </div>
-            <div className="flex md:hidden justify-between overflow-hidden">
-                <div className="md:w-[400px] bg-mobile mx-auto w-full h-screen bg-cover bg-center sm:bg-cover sm:bg-no-repeat md:bg-cover md:bg-center">
-                    <nav className="flex justify-between items-center sm:justify-between md:pb-8 sm:px-10 md:px-12">
-                        <button className="mx-5 mb-4">
-                            <RxHamburgerMenu className="h-10 w-8 bg-gradient-to-tr text-[#F472B6]"></RxHamburgerMenu>
-                        </button>
-                        <div className="my-5">
-                            <img
-                                src="/src/assets/img/NavBar/logo.svg"
-                                className="w-[85%] my-5 md:block"
-                                alt=""
-                            />
-                        </div>
-                    </nav>
-                    <div className="flex flex-col justify-center my-48 items-center">
-                        <h1 className="text-white pl-9 font-poppins pr-6 text-center text-3xl sm:text-4xl font-bold">
-                            Live the emotion of the manga
-                        </h1>
-                        <h1 className="text-white text-xl font-poppins my-2 mb-4">
-                            Find the perfect manga for you
-                        </h1>
-                        <button className="p-4 w-80 rounded-full font-roboto text-white text-lg bg-[#F472B6]">
-                            Explore
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <Mobile></Mobile>
         </>
     )
 }
