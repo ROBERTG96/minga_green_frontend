@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ArrowRight({onClick }) {
+export default function ArrowRight({ onClick }) {
     return (
 
         <button
