@@ -3,7 +3,7 @@ import Index from "./pages/Index";
 
 export default function App() {
   let data = [{
-    character_photo: '/src/assets/img/NavBar/personaje1.png',
+    character_photo: 'prueba1',
     cover_photo: 'prueba1',
     title: 'prueba1',
     description: 'prueba1'

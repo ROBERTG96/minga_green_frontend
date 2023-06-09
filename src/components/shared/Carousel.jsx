@@ -44,6 +44,7 @@ export default function Carouselx({ character_photo, cover_photo, title, descrip
                                     </div>
                                 </div>
                                 <ArrowRight onClick={next} />
+
                             </div>
 
                             <div className="hidden md:block mt-12">
@@ -68,7 +69,6 @@ export default function Carouselx({ character_photo, cover_photo, title, descrip
                     </div>
                 </div>
             </div>
-
             <Mobile></Mobile>
         </>
     )
