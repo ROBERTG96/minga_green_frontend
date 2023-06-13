@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Arrow({ d, onClick }) {
+export default function Arrow({ onClick }) {
     return (
 
         <div>
             <button
-                type="button"
-                className="md:hidden lg:block xl:p-5 top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                type="button" onClick={onClick}
+                className="md:hidden lg:block xl:p-10 top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev
             >
                 <span className="">
