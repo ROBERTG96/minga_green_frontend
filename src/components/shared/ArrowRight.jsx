@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function ArrowRight({onClick }) {
+export default function ArrowRight({ onClick }) {
     return (
 
-        <button
+        <button onClick={onClick}
             type="button"
             className="md:hidden lg:block xl:p-10 top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-prev

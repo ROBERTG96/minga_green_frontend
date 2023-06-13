@@ -1,18 +1,21 @@
+import { useState } from "react";
 import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
-
 import Mobile from "./Mobile"
 
 export default function Carouselx({ character_photo, cover_photo, title, description }) {
 
-    let counter = 0;
+
+    //let counter = 0;
+    const [counter, modify] = useState(0);
+
     const next = () => {
-        counter++;
+        modify(counter + 1);
         console.log(counter);
     }
 
     const prev = () => {
-        counter--;
+        modify(counter - 1);
         console.log(counter);
     }
 
@@ -22,17 +25,22 @@ export default function Carouselx({ character_photo, cover_photo, title, descrip
                 <div className="rounded-lg">
                     <div className="duration-700 ease-in-out" data-carousel-item>
                         <div className="hidden bg-[#EBEBEB] md:block pb-2 px-14 -mt-12">
+
                             <div className="flex justify-between h-64 bg-home1 rounded bg-cover w-full">
                                 <ArrowLeft onClick={prev} />
+
                                 <div className="flex">
+
                                     <img
                                         src="/src/assets/img/NavBar/personaje1.png"
-                                        className="pl-10 pr-20 -mt-7 md:pl-0 md:pr-0 lg:-mx-24 lg:pr-36 lg:pl-10 xl:pl-1 xl:pr-44 xl:-mx-24"
+                                        className="-mt-7 md:pl-0 md:pr-0 lg:-mx-8 lg:pr-28 lg:pl-10 xl:pl-28 xl:pr-44 xl:-mx-18"
                                     />
+
                                     <img
                                         src="/src/assets/img/NavBar/Image3.png"
                                         className="-mt-9 mb-8 lg:pr-44"
                                     />
+
                                     <div className="flex p-24 items-center md:p-5 md:text-xs md:items-start lg:-mx-32 lg:p-7 lg:pr-32 2xl:-mx-32">
                                         <h1 className="text-white font-roboto my-2 xl:w-[90%] xl:pl-16 xl:pt-4 xl:leading-tight 2xl:pl-44">
                                             <h1 className="text-white text-xl my-4 lg:text-2xl font-montserrat">Shonen</h1>
