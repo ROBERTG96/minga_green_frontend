@@ -20,13 +20,13 @@ export default function NavBar() {
           </div>
         </nav>
         {display && (
-          <div className="w-44 top-0 fixed bg-pink-400 h-screen">
-            <p onClick={() => setDisplay(!display)} className="pl-40 text-white pointer"><b>X</b></p>
+          <div className="w-60 top-0 fixed bg-pink-400 h-screen">
+            <p onClick={() => setDisplay(!display)} className="pl-56 text-white pointer font-extrabold"><b>X</b></p>
             <p className="pl-6 text-white">Home</p>
             <p className="pl-6 text-white">Sign In</p>
             <p className="pl-6 text-white">Register</p>
           </div>)}
-
+        {/*    {options?.map((each, index) => <Anchor key={index} to={each.to} className="w-11/12 my-1 p-2 text-gray-100 hover:bg-white hover:text-[#F472B6] hover:rounded-lg">{each.title}</Anchor>)} */}
       </div>
     </>
   );

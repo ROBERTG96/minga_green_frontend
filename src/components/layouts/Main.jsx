@@ -1,11 +1,11 @@
 import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
-
-export default function Main({ children }) {
+import { Outlet } from 'react-router-dom'
+export default function Main() {
     return (
         <>
             <NavBar></NavBar>
-            {children}
+            <Outlet />
             <Footer></Footer>
         </>
     )

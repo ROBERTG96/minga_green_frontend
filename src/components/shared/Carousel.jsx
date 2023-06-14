@@ -3,8 +3,7 @@ import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 import Mobile from "./Mobile"
 
-export default function Carouselx({ character_photo, cover_photo, title, description }) {
-
+export default function Carouselx() {
 
     //let counter = 0;
     const [counter, modify] = useState(0);
